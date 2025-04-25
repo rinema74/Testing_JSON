@@ -1,0 +1,193 @@
+[
+  {
+    "nome_tracciato": "Tracciato1",
+    "campi": [
+      {
+        "nome": "Nome",
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 20
+      },
+      {
+        "nome": "Cognome",
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 30
+      },
+      {
+        "nome": "Età",
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 3
+      },
+      {
+        "nome": "Stipendio",
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 10
+      }
+    ]
+  },
+  {
+    "nome_tracciato": "Tracciato2",
+    "campi": [
+      {
+        "nome": "Prodotto",
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 50
+      },
+      {
+        "nome": "Quantità",
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 5
+      },
+      {
+        "nome": "Prezzo",
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 8
+      },
+      {
+        "nome": "CodiceFornitore",
+        "tipologia": "KOSTANTE",
+        "lunghezza": 10,
+        "kostante": "ABC123"
+      }
+    ]
+  },
+  {
+    "nome_tracciato": "Tracciato3",
+    "campi": [
+      {
+        "nome": "NomeCliente",
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 40
+      },
+      {
+        "nome": "TipoCliente",
+        "tipologia": "Campo definito da Lista",
+        "lunghezza": 15,
+        "valori": [
+          "Privato",
+          "Azienda",
+          "Ente pubblico"
+        ]
+      },
+      {
+        "nome": "CodiceFiscale",
+        "tipologia": "ORIGINALE",
+        "lunghezza": 16
+      },
+      {
+        "nome": "Fatturato",
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 12
+      }
+    ]
+  },
+  {
+    "nome_tracciato": "Ricezione Verticale Azienda",
+    "campi": {
+      "CodiceDitta": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 6,
+        "kostante": ""
+      },
+      "Validita": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 8,
+        "kostante": "20240101"
+      },
+      "Codice ricezione fisso": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 12,
+        "kostante": "HR1ANAGRACOMP"
+      },
+      "Codice campo": {
+        "tipologia": "KOSTANTE con spazi dopo il valore",
+        "lunghezza": 12,
+        "kostante": "CAMPO1"
+      },
+      "Codice riferimento dato": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 10,
+        "kostante": ""
+      },
+      "Valore da inserire": {
+        "tipologia": "KOSTANTE con spazi dopo il valore",
+        "lunghezza": 40,
+        "kostante": "150"
+      }
+    }
+  },
+  {
+    "nome_tracciato": "Ricezione verticale dipendente",
+    "campi": {
+      "CodiceDitta": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 6,
+        "kostante": ""
+      },
+      "CodiceDipendente": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 7,
+        "kostante": ""
+      },
+      "Validita": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 8,
+        "kostante": "20240101"
+      },
+      "Codice ricezione fisso": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 12,
+        "kostante": "HR1PAGHEWEBAN"
+      },
+      "Codice Campo": {
+        "tipologia": "KOSTANTE con spazi dopo il valore",
+        "lunghezza": 12,
+        "kostante": "CAMPO1"
+      },
+      "Codice riferimento dato": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 20,
+        "kostante": ""
+      },
+      "Valore da inserire": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 40,
+        "kostante": ""
+      }
+    }
+  },
+  {
+    "nome_tracciato": "Pubblicazione con descrittore",
+    "campi": {
+      "FILENAME": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 20,
+        "kostante": ""
+      },
+      "CFISC": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 20,
+        "kostante": ""
+      },
+      "ANNO": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 20,
+        "kostante": ""
+      },
+      "HRZ_MODEL": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 20,
+        "kostante": ""
+      },
+      "DESCRI": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 20,
+        "kostante": ""
+      },
+      "IDCOMPANY": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 20,
+        "kostante": ""
+      }
+    }
+  }
+]
