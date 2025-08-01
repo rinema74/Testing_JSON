@@ -1,192 +1,357 @@
 [
   {
-    "nome_tracciato": "Tracciato1",
-    "campi": [
-      {
-        "nome": "Nome",
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 20
-      },
-      {
-        "nome": "Cognome",
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 30
-      },
-      {
-        "nome": "Età",
-        "tipologia": "Zeri davanti al valore",
-        "lunghezza": 3
-      },
-      {
-        "nome": "Stipendio",
-        "tipologia": "Separatore come punto nei numeri",
-        "lunghezza": 10
-      }
-    ]
-  },
-  {
-    "nome_tracciato": "Tracciato2",
-    "campi": [
-      {
-        "nome": "Prodotto",
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 50
-      },
-      {
-        "nome": "Quantità",
-        "tipologia": "Zeri davanti al valore",
-        "lunghezza": 5
-      },
-      {
-        "nome": "Prezzo",
-        "tipologia": "Separatore come punto nei numeri",
-        "lunghezza": 8
-      },
-      {
-        "nome": "CodiceFornitore",
-        "tipologia": "KOSTANTE",
-        "lunghezza": 10,
-        "kostante": "ABC123"
-      }
-    ]
-  },
-  {
-    "nome_tracciato": "Tracciato3",
-    "campi": [
-      {
-        "nome": "NomeCliente",
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 40
-      },
-      {
-        "nome": "TipoCliente",
-        "tipologia": "Campo definito da Lista",
-        "lunghezza": 15,
-        "valori": [
-          "Privato",
-          "Azienda",
-          "Ente pubblico"
-        ]
-      },
-      {
-        "nome": "CodiceFiscale",
-        "tipologia": "ORIGINALE",
-        "lunghezza": 16
-      },
-      {
-        "nome": "Fatturato",
-        "tipologia": "Separatore come punto nei numeri",
-        "lunghezza": 12
-      }
-    ]
-  },
-  {
-    "nome_tracciato": "Ricezione Verticale Azienda",
+    "nome_tracciato": "Tracciato Caricamento Voci - Rif. Versione Doc. Tecnico Zucchetti 30/04/2023",
     "campi": {
-      "CodiceDitta": {
+      "CodiceAzienda": {
         "tipologia": "Zeri davanti al valore",
         "lunghezza": 6,
-        "kostante": ""
-      },
-      "Validita": {
-        "tipologia": "KOSTANTE",
-        "lunghezza": 8,
-        "kostante": "20240101"
-      },
-      "Codice ricezione fisso": {
-        "tipologia": "KOSTANTE",
-        "lunghezza": 12,
-        "kostante": "HR1ANAGRACOMP"
-      },
-      "Codice campo": {
-        "tipologia": "KOSTANTE con spazi dopo il valore",
-        "lunghezza": 12,
-        "kostante": "CAMPO1"
-      },
-      "Codice riferimento dato": {
-        "tipologia": "Spazi davanti al valore",
-        "lunghezza": 10,
-        "kostante": ""
-      },
-      "Valore da inserire": {
-        "tipologia": "KOSTANTE con spazi dopo il valore",
-        "lunghezza": 40,
-        "kostante": "150"
-      }
-    }
-  },
-  {
-    "nome_tracciato": "Ricezione verticale dipendente",
-    "campi": {
-      "CodiceDitta": {
-        "tipologia": "Zeri davanti al valore",
-        "lunghezza": 6,
-        "kostante": ""
+        "obbligatorio": true,
+        "sintassi": ""
       },
       "CodiceDipendente": {
         "tipologia": "Zeri davanti al valore",
         "lunghezza": 7,
-        "kostante": ""
+        "obbligatorio": true,
+        "sintassi": ""
       },
-      "Validita": {
-        "tipologia": "KOSTANTE",
+      "CodiceDipendenteRilPres": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 21
+      },
+      "DataElaborazione": {
+        "tipologia": "Spazi davanti al valore",
         "lunghezza": 8,
-        "kostante": "20240101"
+        "obbligatorio": true,
+        "sintassi": "aaaaMMgg"
       },
-      "Codice ricezione fisso": {
+      "CodiceTipoCedolino": {
         "tipologia": "KOSTANTE",
-        "lunghezza": 12,
-        "kostante": "HR1PAGHEWEBAN"
+        "lunghezza": 2,
+        "kostante": "50",
+        "sintassi": ""
       },
-      "Codice Campo": {
-        "tipologia": "KOSTANTE con spazi dopo il valore",
-        "lunghezza": 12,
-        "kostante": "CAMPO1"
+      "DataPresenzeMese": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 8
       },
-      "Codice riferimento dato": {
+      "CodiceSezioneVoce": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 1,
+        "obbligatorio": false,
+        "sintassi": "R,S",
+        "kostante": "R"
+      },
+      "CodiceVoce": {
+        "tipologia": "ORIGINALE",
+        "lunghezza": 6,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "CodiceTipoVoce": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 1,
+        "kostante": "I",
+        "sintassi": ""
+      },
+      "Quantità": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 7
+      },
+      "TariffaBase": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9
+      },
+      "Tariffa": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9
+      },
+      "Importo": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "DataInizioPeriodoCompetenza": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 8,
+        "obbligatorio": false,
+        "sintassi": "in caso di parasubordinati"
+      },
+      "DataFinePeriodoCompetenza": {
         "tipologia": "Spazi dietro al valore",
-        "lunghezza": 20,
-        "kostante": ""
+        "lunghezza": 8,
+        "obbligatorio": false,
+        "sintassi": "in caso di parasubordinati"
       },
-      "Valore da inserire": {
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 40,
-        "kostante": ""
+      "NumeroMesiPreavviso": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      },
+      "NumeroSettimanePreavviso": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      },
+      "TitoloIncentivoAltreIndESomme": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 6
+      },
+      "AnnoArretratiFiscali": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 4
+      },
+      "GiorniEsenzioneFiscale": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
       }
     }
   },
   {
-    "nome_tracciato": "Pubblicazione con descrittore",
+    "nome_tracciato": "Tracciato Voci a ORE - Rif. Versione Doc. Tecnico Zucchetti 30/04/2023",
     "campi": {
-      "FILENAME": {
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 20,
-        "kostante": ""
+      "CodiceAzienda": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 6,
+        "obbligatorio": true,
+        "sintassi": ""
       },
-      "CFISC": {
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 20,
-        "kostante": ""
+      "CodiceDipendente": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 7,
+        "obbligatorio": true,
+        "sintassi": ""
       },
-      "ANNO": {
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 20,
-        "kostante": ""
+      "CodiceDipendenteRilPres": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 21
       },
-      "HRZ_MODEL": {
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 20,
-        "kostante": ""
+      "DataElaborazione": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 8,
+        "obbligatorio": true,
+        "sintassi": "aaaaMMgg"
       },
-      "DESCRI": {
-        "tipologia": "Spazi dietro al valore",
-        "lunghezza": 20,
-        "kostante": ""
+      "CodiceTipoCedolino": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 2,
+        "kostante": "50",
+        "sintassi": ""
       },
-      "IDCOMPANY": {
+      "DataPresenzeMese": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 8
+      },
+      "CodiceSezioneVoce": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 1,
+        "obbligatorio": false,
+        "sintassi": "R,S",
+        "kostante": "R"
+      },
+      "CodiceVoce": {
+        "tipologia": "ORIGINALE",
+        "lunghezza": 6,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "CodiceTipoVoce": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 1,
+        "kostante": "H",
+        "sintassi": "",
+        "obbligatorio": false
+      },
+      "Quantità": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 7,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "TariffaBase": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9
+      },
+      "Tariffa": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "Importo": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9,
+        "obbligatorio": false,
+        "sintassi": ""
+      },
+      "DataInizioPeriodoCompetenza": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 8,
+        "obbligatorio": false,
+        "sintassi": "in caso di parasubordinati"
+      },
+      "DataFinePeriodoCompetenza": {
         "tipologia": "Spazi dietro al valore",
-        "lunghezza": 20,
-        "kostante": ""
+        "lunghezza": 8,
+        "obbligatorio": false,
+        "sintassi": "in caso di parasubordinati"
+      },
+      "NumeroMesiPreavviso": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      },
+      "NumeroSettimanePreavviso": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      },
+      "TitoloIncentivoAltreIndESomme": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 6
+      },
+      "AnnoArretratiFiscali": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 4,
+        "obbligatorio": false,
+        "sintassi": "AAAA se Voce a Tass. Sep."
+      },
+      "GiorniEsenzioneFiscale": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      }
+    }
+  },
+  {
+    "nome_tracciato": "Tracciato Voci a GIORNI - Rif. Versione Doc. Tecnico Zucchetti 30/04/2023",
+    "campi": {
+      "CodiceAzienda": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 6,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "CodiceDipendente": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 7,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "CodiceDipendenteRilPres": {
+        "tipologia": "Zeri davanti al valore",
+        "lunghezza": 21
+      },
+      "DataElaborazione": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 8,
+        "obbligatorio": true,
+        "sintassi": "aaaaMMgg"
+      },
+      "CodiceTipoCedolino": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 2,
+        "kostante": "50",
+        "sintassi": ""
+      },
+      "DataPresenzeMese": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 8
+      },
+      "CodiceSezioneVoce": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 1,
+        "obbligatorio": false,
+        "sintassi": "R,S",
+        "kostante": "R"
+      },
+      "CodiceVoce": {
+        "tipologia": "ORIGINALE",
+        "lunghezza": 6,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "CodiceTipoVoce": {
+        "tipologia": "KOSTANTE",
+        "lunghezza": 1,
+        "kostante": "G",
+        "sintassi": "",
+        "obbligatorio": false
+      },
+      "Quantità": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 7,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "TariffaBase": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9
+      },
+      "Tariffa": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9,
+        "obbligatorio": true,
+        "sintassi": ""
+      },
+      "Importo": {
+        "tipologia": "Separatore come punto nei numeri",
+        "lunghezza": 9,
+        "obbligatorio": false,
+        "sintassi": ""
+      },
+      "DataInizioPeriodoCompetenza": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 8,
+        "obbligatorio": false,
+        "sintassi": "in caso di parasubordinati"
+      },
+      "DataFinePeriodoCompetenza": {
+        "tipologia": "Spazi dietro al valore",
+        "lunghezza": 8,
+        "obbligatorio": false,
+        "sintassi": "in caso di parasubordinati"
+      },
+      "NumeroMesiPreavviso": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      },
+      "NumeroSettimanePreavviso": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      },
+      "TitoloIncentivoAltreIndESomme": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 6
+      },
+      "AnnoArretratiFiscali": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 4,
+        "obbligatorio": false,
+        "sintassi": "AAAA se Voce a Tass. Sep."
+      },
+      "GiorniEsenzioneFiscale": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      },
+      "DescrizioneAggiuntiva": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 50
+      },
+      "AnnoRiferimentoOneri": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 4
+      },
+      "CodiceFiscaleBeneficiarioOneri": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 16
+      },
+      "CodContoF24": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 3
+      },
+      "CodiceTipoEvento": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 2
+      },
+      "NumeroProgressivoDomandaCig": {
+        "tipologia": "Spazi davanti al valore",
+        "lunghezza": 4
       }
     }
   }
